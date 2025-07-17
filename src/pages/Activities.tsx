@@ -6,6 +6,11 @@ import activities2 from '@/assets/activities2.jpg';
 import activities3 from '@/assets/activities3.jpg';
 import activities4 from '@/assets/activities4.jpg';
 import activities5 from '@/assets/activities5.jpg';
+import activities6 from '@/assets/activities6.jpg';
+import activities7 from '@/assets/activities7.jpg';
+import activities8 from '@/assets/activities8.jpg';
+import activities9 from '@/assets/activities9.jpg';
+import activities10 from '@/assets/activities10.jpg';
 
 const Activities = () => {
   // const dailySchedule = [
@@ -184,10 +189,90 @@ const Activities = () => {
                 </p> */}
               </div>
             </div>
+
+            <div className="bg-white rounded-3xl overflow-hidden shadow-card slide-up">
+              <ClickableImage 
+                src={activities5} 
+                alt="Senior fitness and physiotherapy programs at free old age home Mumbai - Elderly exercise therapy"
+                className="w-full h-64"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-blue-deep mb-3"></h3>
+{/*                 <p className="text-muted-foreground">
+                  Professional physiotherapy sessions, gentle yoga for seniors, chair exercises, and mobility 
+                  training conducted by certified geriatric fitness specialists. Programs designed to improve 
+                  balance, reduce fall risk, and maintain joint flexibility for elderly residents.
+                </p> */}
+              </div>
+            </div>
+
+            <div className="bg-white rounded-3xl overflow-hidden shadow-card slide-up">
+              <ClickableImage 
+                src={activities6} 
+                alt="Senior fitness and physiotherapy programs at free old age home Mumbai - Elderly exercise therapy"
+                className="w-full h-64"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-blue-deep mb-3"></h3>
+{/*                 <p className="text-muted-foreground">
+                  Professional physiotherapy sessions, gentle yoga for seniors, chair exercises, and mobility 
+                  training conducted by certified geriatric fitness specialists. Programs designed to improve 
+                  balance, reduce fall risk, and maintain joint flexibility for elderly residents.
+                </p> */}
+              </div>
+            </div>
+
+            <div className="bg-white rounded-3xl overflow-hidden shadow-card slide-up">
+              <ClickableImage 
+                src={activities7} 
+                alt="Senior fitness and physiotherapy programs at free old age home Mumbai - Elderly exercise therapy"
+                className="w-full h-64"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-blue-deep mb-3"></h3>
+{/*                 <p className="text-muted-foreground">
+                  Professional physiotherapy sessions, gentle yoga for seniors, chair exercises, and mobility 
+                  training conducted by certified geriatric fitness specialists. Programs designed to improve 
+                  balance, reduce fall risk, and maintain joint flexibility for elderly residents.
+                </p> */}
+              </div>
+            </div>
+
+            <div className="bg-white rounded-3xl overflow-hidden shadow-card slide-up">
+              <ClickableImage 
+                src={activities8} 
+                alt="Senior fitness and physiotherapy programs at free old age home Mumbai - Elderly exercise therapy"
+                className="w-full h-64"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-blue-deep mb-3"></h3>
+{/*                 <p className="text-muted-foreground">
+                  Professional physiotherapy sessions, gentle yoga for seniors, chair exercises, and mobility 
+                  training conducted by certified geriatric fitness specialists. Programs designed to improve 
+                  balance, reduce fall risk, and maintain joint flexibility for elderly residents.
+                </p> */}
+              </div>
+            </div>
+
+            <div className="bg-white rounded-3xl overflow-hidden shadow-card slide-up">
+              <ClickableImage 
+                src={activities9} 
+                alt="Senior fitness and physiotherapy programs at free old age home Mumbai - Elderly exercise therapy"
+                className="w-full h-64"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-blue-deep mb-3"></h3>
+{/*                 <p className="text-muted-foreground">
+                  Professional physiotherapy sessions, gentle yoga for seniors, chair exercises, and mobility 
+                  training conducted by certified geriatric fitness specialists. Programs designed to improve 
+                  balance, reduce fall risk, and maintain joint flexibility for elderly residents.
+                </p> */}
+              </div>
+            </div>
             
             <div className="bg-white rounded-3xl overflow-hidden shadow-card fade-in">
               <ClickableImage 
-                src={activities5} 
+                src={activities10} 
                 alt="Art therapy and creative activities for elderly at Mumbai old age home - Senior mental wellness programs"
                 className="w-full h-64"
               />
