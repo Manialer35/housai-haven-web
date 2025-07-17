@@ -6,49 +6,49 @@ import activities2 from '@/assets/activities2.jpg';
 import activities3 from '@/assets/activities3.jpg';
 
 const Activities = () => {
-  const dailySchedule = [
-    { time: '6:00 AM', activity: 'Morning Prayer & Meditation', icon: Heart },
-    { time: '7:00 AM', activity: 'Light Exercise & Yoga', icon: Dumbbell },
-    { time: '8:30 AM', activity: 'Breakfast', icon: Users },
-    { time: '10:00 AM', activity: 'Social Activities & Games', icon: Users },
-    { time: '12:30 PM', activity: 'Lunch', icon: Users },
-    { time: '2:00 PM', activity: 'Rest Time', icon: Clock },
-    { time: '4:00 PM', activity: 'Tea Time & Conversations', icon: Users },
-    { time: '5:00 PM', activity: 'Evening Activities', icon: Music },
-    { time: '7:30 PM', activity: 'Dinner', icon: Users },
-    { time: '9:00 PM', activity: 'Rest & Sleep', icon: Clock }
-  ];
+  // const dailySchedule = [
+  //   { time: '6:00 AM', activity: 'Morning Prayer & Meditation', icon: Heart },
+  //   { time: '7:00 AM', activity: 'Light Exercise & Yoga', icon: Dumbbell },
+  //   { time: '8:30 AM', activity: 'Breakfast', icon: Users },
+  //   { time: '10:00 AM', activity: 'Social Activities & Games', icon: Users },
+  //   { time: '12:30 PM', activity: 'Lunch', icon: Users },
+  //   { time: '2:00 PM', activity: 'Rest Time', icon: Clock },
+  //   { time: '4:00 PM', activity: 'Tea Time & Conversations', icon: Users },
+  //   { time: '5:00 PM', activity: 'Evening Activities', icon: Music },
+  //   { time: '7:30 PM', activity: 'Dinner', icon: Users },
+  //   { time: '9:00 PM', activity: 'Rest & Sleep', icon: Clock }
+  // ];
 
-  const weeklyActivities = [
-    {
-      day: 'Monday',
-      activities: ['Music Therapy', 'Indoor Games', 'Story Telling']
-    },
-    {
-      day: 'Tuesday', 
-      activities: ['Arts & Crafts', 'Gardening', 'Movie Time']
-    },
-    {
-      day: 'Wednesday',
-      activities: ['Physiotherapy', 'Cultural Programs', 'Book Reading']
-    },
-    {
-      day: 'Thursday',
-      activities: ['Cooking Together', 'Card Games', 'Spiritual Discourse']
-    },
-    {
-      day: 'Friday',
-      activities: ['Dance Therapy', 'Nature Walks', 'Group Discussions']
-    },
-    {
-      day: 'Saturday',
-      activities: ['Special Celebrations', 'Family Visits', 'Entertainment']
-    },
-    {
-      day: 'Sunday',
-      activities: ['Community Prayer', 'Rest & Relaxation', 'Special Meals']
-    }
-  ];
+  // const weeklyActivities = [
+  //   {
+  //     day: 'Monday',
+  //     activities: ['Music Therapy', 'Indoor Games', 'Story Telling']
+  //   },
+  //   {
+  //     day: 'Tuesday', 
+  //     activities: ['Arts & Crafts', 'Gardening', 'Movie Time']
+  //   },
+  //   {
+  //     day: 'Wednesday',
+  //     activities: ['Physiotherapy', 'Cultural Programs', 'Book Reading']
+  //   },
+  //   {
+  //     day: 'Thursday',
+  //     activities: ['Cooking Together', 'Card Games', 'Spiritual Discourse']
+  //   },
+  //   {
+  //     day: 'Friday',
+  //     activities: ['Dance Therapy', 'Nature Walks', 'Group Discussions']
+  //   },
+  //   {
+  //     day: 'Saturday',
+  //     activities: ['Special Celebrations', 'Family Visits', 'Entertainment']
+  //   },
+  //   {
+  //     day: 'Sunday',
+  //     activities: ['Community Prayer', 'Rest & Relaxation', 'Special Meals']
+  //   }
+  // ];
 
   const celebrations = [
     'Birthday Celebrations',
@@ -126,7 +126,7 @@ const Activities = () => {
                 className="w-full h-64"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-blue-deep mb-3">Therapeutic Nutrition Programs</h3>
+                <h3 className="text-xl font-semibold text-blue-deep mb-3"></h3>
 {/*                 <p className="text-muted-foreground">
                   Dietitian-designed nutritious meals shared in a warm, family-like atmosphere. Our specialized 
                   geriatric nutrition program includes diabetic-friendly options, heart-healthy meals, and 
@@ -142,7 +142,7 @@ const Activities = () => {
                 className="w-full h-64"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-blue-deep mb-3">Physiotherapy & Fitness Programs</h3>
+                <h3 className="text-xl font-semibold text-blue-deep mb-3"></h3>
 {/*                 <p className="text-muted-foreground">
                   Professional physiotherapy sessions, gentle yoga for seniors, chair exercises, and mobility 
                   training conducted by certified geriatric fitness specialists. Programs designed to improve 
@@ -158,7 +158,7 @@ const Activities = () => {
                 className="w-full h-64"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-blue-deep mb-3">Art Therapy & Cognitive Stimulation</h3>
+                <h3 className="text-xl font-semibold text-blue-deep mb-3"></h3>
 {/*                 <p className="text-muted-foreground">
                   Structured art therapy, creative writing workshops, memory games, and cognitive exercises 
                   designed to prevent dementia and enhance mental acuity. Our occupational therapists conduct 
