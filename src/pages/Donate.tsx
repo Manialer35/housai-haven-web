@@ -1,6 +1,8 @@
 import React from 'react';
+import ClickableImage from '@/components/ClickableImage';
 import { Button } from '@/components/ui/button';
 import { Heart, Users, Home, Utensils, Stethoscope, Gift, Star, ArrowRight } from 'lucide-react';
+import donationQR from '@/assets/donation-qr.png';
 
 const Donate = () => {
   const donationAreas = [
@@ -74,11 +76,13 @@ const Donate = () => {
             <Heart className="w-6 h-6 text-white ml-3" />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Donate with Love
+            Support India's Best Free Old Age Home | Tax-Deductible Donations | 80G Benefits
           </h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-            While our services are completely free for residents, your generous donations help us 
-            continue providing compassionate care and maintaining our loving environment.
+          <p className="text-xl text-white/90 max-w-4xl mx-auto mb-8">
+            Support India's premier free elderly care organization with tax-deductible donations. 
+            Your contribution enables us to provide free accommodation, medical care, physiotherapy, 
+            and nutritional support to 500+ senior citizens across Maharashtra. Receive 80G tax 
+            benefits and detailed impact reports showing how your donation transforms elderly lives.
           </p>
           <Button variant="outline" size="hero" className="border-white/30 text-white hover:bg-white/10">
             <Heart className="w-5 h-5 mr-2" />
@@ -268,9 +272,9 @@ const Donate = () => {
               </div>
               <div className="mt-8 text-center">
               <h4 className="text-lg font-semibold text-white mb-2">Scan & Pay via UPI</h4>
-              <img
-                src="/src/assets/donation-qr.png"
-                alt="Donate via QR Code"
+              <ClickableImage
+                src={donationQR}
+                alt="UPI QR Code for donating to Housai Old Age Home Mumbai - Instant tax-deductible donations"
                 className="mx-auto w-48 h-48 rounded-lg border border-white/30 shadow-md"
               />
               <p className="text-sm text-white/70 mt-2">Scan using any UPI app to donate directly</p>

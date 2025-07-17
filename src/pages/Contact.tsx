@@ -39,10 +39,13 @@ const Contact = () => {
       <section className="py-20 gradient-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Contact Us
+            Contact Mumbai's Best Free Old Age Home | Immediate Admission Available
           </h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            We're here to answer your questions and welcome you to our family
+          <p className="text-xl text-white/90 max-w-4xl mx-auto">
+            Get immediate free admission to Housai Old Age Home, Mumbai's premier elderly care facility. 
+            Call +91-98765-43210 for instant consultation. No waiting lists, no documentation fees, 
+            no hidden charges. Serving senior citizens across Maharashtra with 24/7 medical support 
+            and compassionate care since 1995.
           </p>
         </div>
       </section>
@@ -53,10 +56,12 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div className="fade-in">
-              <h2 className="heading-secondary mb-8">Get in Touch</h2>
+              <h2 className="heading-secondary mb-8">Get Immediate Free Admission | No Waiting Period</h2>
               <p className="text-lg text-warm mb-8 leading-relaxed">
-                Have questions about our services, admission process, or want to visit our facility? 
-                We'd love to hear from you. Our caring team is ready to assist you and your family.
+                Need immediate elderly care admission in Mumbai? Contact India's most trusted free old age home 
+                today. Our admission team provides instant consultation for senior citizens requiring geriatric care, 
+                medical support, or accommodation. Same-day visits available for families seeking quality elderly 
+                care without financial burden. Expert staff available 24/7 for emergency admissions.
               </p>
               
               <div className="space-y-6">

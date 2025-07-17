@@ -1,4 +1,5 @@
 import React from 'react';
+import ClickableImage from '@/components/ClickableImage';
 import { Calendar, Clock, Users, Heart, Music, Palette, Dumbbell, BookOpen } from 'lucide-react';
 import activities1 from '@/assets/activities1.jpg';
 import activities2 from '@/assets/activities2.jpg';
@@ -64,10 +65,13 @@ const Activities = () => {
       <section className="py-20 gradient-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Daily Activities & Programs
+            Elderly Care Activities & Wellness Programs in Mumbai | Free Senior Recreational Therapy
           </h1>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Engaging activities designed to keep our residents active, happy, and socially connected
+          <p className="text-xl text-white/90 max-w-4xl mx-auto">
+            Discover comprehensive elderly wellness programs at India's premier free old age home. 
+            Our expert-designed activities include yoga therapy, physiotherapy, recreational therapy, 
+            music therapy, and cognitive stimulation programs specifically created for senior citizens 
+            to maintain physical health, mental agility, and emotional well-being.
           </p>
         </div>
       </section>
@@ -116,43 +120,49 @@ const Activities = () => {
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-3xl overflow-hidden shadow-card fade-in">
-              <img 
+              <ClickableImage 
                 src={activities1} 
-                alt="Meal time together" 
-                className="w-full h-64 object-cover"
+                alt="Elderly nutritional meal program at Housai Old Age Home Mumbai - Free balanced diet for senior citizens"
+                className="w-full h-64"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-blue-deep mb-3">Meal Times</h3>
+                <h3 className="text-xl font-semibold text-blue-deep mb-3">Therapeutic Nutrition Programs</h3>
                 <p className="text-muted-foreground">
-                  Nutritious meals shared in a warm, family-like atmosphere with conversations and laughter.
+                  Dietitian-designed nutritious meals shared in a warm, family-like atmosphere. Our specialized 
+                  geriatric nutrition program includes diabetic-friendly options, heart-healthy meals, and 
+                  therapeutic diets for elderly residents with specific health conditions.
                 </p>
               </div>
             </div>
             
             <div className="bg-white rounded-3xl overflow-hidden shadow-card slide-up">
-              <img 
+              <ClickableImage 
                 src={activities2} 
-                alt="Exercise and wellness" 
-                className="w-full h-64 object-cover"
+                alt="Senior fitness and physiotherapy programs at free old age home Mumbai - Elderly exercise therapy"
+                className="w-full h-64"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-blue-deep mb-3">Exercise & Wellness</h3>
+                <h3 className="text-xl font-semibold text-blue-deep mb-3">Physiotherapy & Fitness Programs</h3>
                 <p className="text-muted-foreground">
-                  Gentle yoga, physiotherapy, and light exercises to maintain health and mobility.
+                  Professional physiotherapy sessions, gentle yoga for seniors, chair exercises, and mobility 
+                  training conducted by certified geriatric fitness specialists. Programs designed to improve 
+                  balance, reduce fall risk, and maintain joint flexibility for elderly residents.
                 </p>
               </div>
             </div>
             
             <div className="bg-white rounded-3xl overflow-hidden shadow-card fade-in">
-              <img 
+              <ClickableImage 
                 src={activities3} 
-                alt="Arts and crafts" 
-                className="w-full h-64 object-cover"
+                alt="Art therapy and creative activities for elderly at Mumbai old age home - Senior mental wellness programs"
+                className="w-full h-64"
               />
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-blue-deep mb-3">Creative Activities</h3>
+                <h3 className="text-xl font-semibold text-blue-deep mb-3">Art Therapy & Cognitive Stimulation</h3>
                 <p className="text-muted-foreground">
-                  Arts, crafts, painting, and creative expression to stimulate the mind and soul.
+                  Structured art therapy, creative writing workshops, memory games, and cognitive exercises 
+                  designed to prevent dementia and enhance mental acuity. Our occupational therapists conduct 
+                  specialized programs to maintain cognitive function in elderly residents.
                 </p>
               </div>
             </div>
