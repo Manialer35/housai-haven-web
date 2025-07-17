@@ -9,8 +9,8 @@ import activities5 from '@/assets/activities5.jpg';
 import activities6 from '@/assets/activities6.jpg';
 import activities7 from '@/assets/activities7.jpg';
 import activities8 from '@/assets/activities8.jpg';
-import activities9 from '@/assets/activities9.jpg';
-import activities10 from '@/assets/activities10.jpg';
+// import activities9 from '@/assets/activities9.jpg';
+// import activities10 from '@/assets/activities10.jpg';
 
 const Activities = () => {
   // const dailySchedule = [
@@ -238,7 +238,7 @@ const Activities = () => {
               </div>
             </div>
 
-            <div className="bg-white rounded-3xl overflow-hidden shadow-card slide-up">
+{/*             <div className="bg-white rounded-3xl overflow-hidden shadow-card slide-up">
               <ClickableImage 
                 src={activities8} 
                 alt="Senior fitness and physiotherapy programs at free old age home Mumbai - Elderly exercise therapy"
@@ -268,11 +268,11 @@ const Activities = () => {
                   balance, reduce fall risk, and maintain joint flexibility for elderly residents.
                 </p> */}
               </div>
-            </div>
+            </div> */}
             
             <div className="bg-white rounded-3xl overflow-hidden shadow-card fade-in">
               <ClickableImage 
-                src={activities10} 
+                src={activities8} 
                 alt="Art therapy and creative activities for elderly at Mumbai old age home - Senior mental wellness programs"
                 className="w-full h-64"
               />
