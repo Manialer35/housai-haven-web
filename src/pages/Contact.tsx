@@ -71,8 +71,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-blue-deep mb-1">Phone</h3>
-                    <p className="text-muted-foreground">+91 98765 43210</p>
-                    <p className="text-muted-foreground">+91 87654 32109</p>
+                    <p className="text-muted-foreground">0233-3560136</p>
+{/*                     <p className="text-muted-foreground">+91 87654 32109</p> */}
                   </div>
                 </div>
                 
@@ -82,8 +82,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-blue-deep mb-1">Email</h3>
-                    <p className="text-muted-foreground">info@housaioldagehome.org</p>
-                    <p className="text-muted-foreground">admin@rayfoundation.org</p>
+                    <p className="text-muted-foreground">info@housaioldagehome.com</p>
+                    <p className="text-muted-foreground">ramdasjiatahawaleyuthfoundation@gmail.com</p>
                   </div>
                 </div>
                 
@@ -95,8 +95,8 @@ const Contact = () => {
                     <h3 className="font-semibold text-blue-deep mb-1">Address</h3>
                     <p className="text-muted-foreground">
                       Housai Old Age Home<br />
-                      123 Care Street, Serenity Gardens<br />
-                      City, State - 123456<br />
+                      Shalini Nagar, 30, Near Maruti Temple<br />
+                      Sangli, Maharashtra - 416416<br />
                       India
                     </p>
                   </div>
