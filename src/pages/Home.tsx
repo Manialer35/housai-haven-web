@@ -49,6 +49,34 @@ const HomePage = () => {
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
+              {/* Glimpse of Activities */}
+              <div className="col-span-2 mt-12">
+                <h3 className="text-2xl font-bold text-blue-deep mb-6 text-center">A Glimpse of Our Activities</h3>
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                  {[
+                    { title: "Morning Yoga", image: "/images/activities/yoga.jpg" },
+                    { title: "Gardening Time", image: "/images/activities/gardening.jpg" },
+                    { title: "Festival Celebrations", image: "/images/activities/festival.jpg" },
+                    { title: "Board Games & Fun", image: "/images/activities/games.jpg" },
+                    { title: "Art & Craft Sessions", image: "/images/activities/art.jpg" },
+                    { title: "Spiritual Prayers", image: "/images/activities/prayers.jpg" },
+                    ].map((activity, index) => (
+                    <div
+                      key={index}
+                      className="rounded-2xl overflow-hidden shadow-card bg-white transition hover:shadow-lg"
+                    >
+                      <img
+                        src={activity.image}
+                        alt={activity.title}
+                        className="w-full h-48 object-cover"
+                      />
+                      <div className="p-4">
+                        <h4 className="text-lg font-semibold text-blue-deep">{activity.title}</h4>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
             <div className="relative slide-up">
               <div className="gradient-warm rounded-3xl p-8 shadow-card">
