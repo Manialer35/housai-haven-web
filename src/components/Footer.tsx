@@ -69,16 +69,16 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Phone className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
                 <div className="text-sm">
-                  <p className="text-white/80">+91 98765 43210</p>
-                  <p className="text-white/80">+91 87654 32109</p>
+                  <p className="text-white/80">0233-3560136</p>
+{/*                   <p className="text-white/80">+91 87654 32109</p> */}
                 </div>
               </div>
               
               <div className="flex items-start space-x-3">
                 <Mail className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
                 <div className="text-sm">
-                  <p className="text-white/80">info@housaioldagehome.org</p>
-                  <p className="text-white/80">admin@rayfoundation.org</p>
+                  <p className="text-white/80">ramdasjiatahawaleyuthfoundation@gmail.com</p>
+                  <p className="text-white/80">info@housaioldagehome.com</p>
                 </div>
               </div>
               
@@ -86,8 +86,8 @@ const Footer = () => {
                 <MapPin className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
                 <div className="text-sm text-white/80">
                   <p>Housai Old Age Home</p>
-                  <p>123 Care Street, Serenity Gardens</p>
-                  <p>City, State - 123456, India</p>
+                  <p>Shalini Nagar, 30, Near Maruti Temple</p>
+                  <p>Sangli, Maharashtra - 416416, India</p>
                 </div>
               </div>
               
