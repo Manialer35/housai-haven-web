@@ -18,9 +18,9 @@ const HeroSlider = () => {
     },
     {
       image: hero2,
-      title: "Joyful Activities & Celebrations",
-      subtitle: "Engaging programs, festivals, and daily activities that keep our residents active and happy",
-      cta: "View Our Activities"
+      // title: "Joyful Activities & Celebrations",
+      // subtitle: "Engaging programs, festivals, and daily activities that keep our residents active and happy",
+      // cta: "View Our Activities"
     },
     {
       image: hero3,
