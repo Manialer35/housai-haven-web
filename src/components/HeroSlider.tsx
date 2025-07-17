@@ -65,36 +65,38 @@ const HeroSlider = () => {
             //<div className="absolute inset-0 bg-gradient-to-r from-black/30 to-black/30 z-10"></div>
             
             {/* Content */}
-            <div className="relative z-10 h-full flex items-center">
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="max-w-3xl">
-                  {/* Free Admission Badge */}
-                  <div className="inline-flex items-center px-4 py-2 bg-accent-warm/90 backdrop-blur-sm rounded-full mb-6 fade-in">
-                    <Star className="w-4 h-4 text-blue-deep mr-2" />
-                    <span className="text-sm font-semibold text-blue-deep">
-                      100% FREE ADMISSIONS
-                    </span>
-                  </div>
-                  
-                  <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight slide-up">
-                    {slide.title}
-                  </h1>
-                  
-                  <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed slide-up">
-                    {slide.subtitle}
-                  </p>
-                  
-                  <div className="flex flex-col sm:flex-row gap-4 slide-up">
-                    <Button asChild variant="hero" size="hero">
-                      <Link to="/about">{slide.cta}</Link>
-                    </Button>
-                    <Button asChild variant="outline" size="hero" className="border-white/30 text-white hover:bg-white/10">
-                      <Link to="/contact">Contact Us</Link>
-                    </Button>
+            {slide.title && (
+              <div className="relative z-10 h-full flex items-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  <div className="max-w-3xl">
+                    {/* Free Admission Badge */}
+                    <div className="inline-flex items-center px-4 py-2 bg-accent-warm/90 backdrop-blur-sm rounded-full mb-6 fade-in">
+                      <Star className="w-4 h-4 text-blue-deep mr-2" />
+                      <span className="text-sm font-semibold text-blue-deep">
+                        100% FREE ADMISSIONS
+                      </span>
+                    </div>
+            
+                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight slide-up">
+                      {slide.title}
+                    </h1>
+            
+                    <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed slide-up">
+                      {slide.subtitle}
+                    </p>
+            
+                    <div className="flex flex-col sm:flex-row gap-4 slide-up">
+                      <Button asChild variant="hero" size="hero">
+                        <Link to="/about">{slide.cta}</Link>
+                      </Button>
+                      <Button asChild variant="outline" size="hero" className="border-white/30 text-white hover:bg-white/10">
+                        <Link to="/contact">Contact Us</Link>
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       ))}
