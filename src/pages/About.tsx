@@ -14,7 +14,7 @@ const About = () => {
             <Star className="w-6 h-6 text-white ml-3" />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            About Mumbai's Premier Free Old Age Home | Ramdasji Athavle Youth Foundation
+            About Housai Old Age Home | Ramdasji Athavle Youth Foundation
           </h1>
           <p className="text-xl text-white/90 max-w-4xl mx-auto">
             Discover the story behind India's most trusted free elderly care center, established by 
