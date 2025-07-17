@@ -228,6 +228,30 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* Map Location */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="heading-secondary mb-4">Visit Our Location</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              We welcome you to visit us. Here's where we’re located:
+            </p>
+          </div>
+          <div className="rounded-3xl overflow-hidden shadow-card">
+            <iframe
+              title="Housai Old Age Home Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3817.971735035624!2d74.601113!3d16.877292699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc12388fac51635%3A0xbe70e03a222a9457!2sHousai%20Old%20Age%20Home!5e0!3m2!1sen!2sin!4v1752749484888!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-[450px] border-0"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      
       {/* Emergency Contact */}
       <section className="py-16 bg-gradient-to-r from-accent-warm/40 to-accent-gentle/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
