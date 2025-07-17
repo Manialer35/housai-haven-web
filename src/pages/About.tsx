@@ -126,6 +126,54 @@ const About = () => {
             </div>
           </div>
         </div>
+        {/* Board of Directors */}
+        <section className="py-20 bg-background">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="heading-secondary mb-4">Board of Directors</h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                Meet the passionate leaders behind the Ramdasji Athavle Youth Foundation
+              </p>
+            </div>
+        
+            {/* Main Director */}
+            <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
+              <img
+                src="/images/directors/main-director.jpg"
+                alt="Main Director"
+                className="w-48 h-48 rounded-full object-cover shadow-card"
+              />
+              <div>
+                <h3 className="text-2xl font-bold text-blue-deep mb-2">Shri. Suresh Athavle</h3>
+                <p className="text-muted-foreground mb-2">Founder & Chief Director</p>
+                <p className="text-muted-foreground">Contact: <a href="tel:+919812345678" className="text-blue-medium hover:underline">+91 98123 45678</a></p>
+              </div>
+            </div>
+        
+            {/* List of Directors */}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                { name: "Meena Patil", position: "Managing Director", phone: "+91 98222 33445" },
+                { name: "Ramesh Deshmukh", position: "Operations Director", phone: "+91 98444 55667" },
+                { name: "Kavita Joshi", position: "Finance Director", phone: "+91 98765 43210" },
+                { name: "Anil Pawar", position: "Medical Director", phone: "+91 98333 66778" },
+                { name: "Sunita Khedekar", position: "Programs Director", phone: "+91 98000 11223" },
+                { name: "Vikas Bhosale", position: "HR Director", phone: "+91 98666 77889" }
+              ].map((director, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-2xl p-6 shadow-card transition hover:shadow-lg"
+                >
+                  <h4 className="text-lg font-semibold text-blue-deep">{director.name}</h4>
+                  <p className="text-muted-foreground">{director.position}</p>
+                  <p className="text-muted-foreground text-sm mt-1">
+                    Contact: <a href={`tel:${director.phone}`} className="text-blue-medium hover:underline">{director.phone}</a>
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       </section>
 
       {/* What We Offer */}
