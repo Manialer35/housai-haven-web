@@ -89,33 +89,41 @@ const HomePage = () => {
       </section>
 
       {/* Glimpse of Activities */}
-      <div className="col-span-2 mt-12">
-        <h3 className="text-2xl font-bold text-blue-deep mb-6 text-center">A Glimpse of Our Activities</h3>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {[
-            { title: "Morning Yoga", image: "/images/activities/yoga.jpg" },
-            { title: "Gardening Time", image: "/images/activities/gardening.jpg" },
-            { title: "Festival Celebrations", image: "/images/activities/festival.jpg" },
-            { title: "Board Games & Fun", image: "/images/activities/games.jpg" },
-            { title: "Art & Craft Sessions", image: "/images/activities/art.jpg" },
-            { title: "Spiritual Prayers", image: "/images/activities/prayers.jpg" },
-          ].map((activity, index) => (
-            <div
-              key={index}
-              className="rounded-2xl overflow-hidden shadow-card bg-white transition hover:shadow-lg"
-            >
-              <img
-                src={activity.image}
-                alt={activity.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h4 className="text-lg font-semibold text-blue-deep">{activity.title}</h4>
+      <section className="py-20 bg-muted/40">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="heading-secondary mb-4">A Glimpse of Our Activities</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              We keep our residents engaged with a variety of joyful and meaningful activities.
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {[
+              { title: "Morning Yoga", image: "/images/activities/yoga.jpg" },
+              { title: "Gardening Time", image: "/images/activities/gardening.jpg" },
+              { title: "Festival Celebrations", image: "/images/activities/festival.jpg" },
+              { title: "Board Games & Fun", image: "/images/activities/games.jpg" },
+              { title: "Art & Craft Sessions", image: "/images/activities/art.jpg" },
+              { title: "Spiritual Prayers", image: "/images/activities/prayers.jpg" },
+            ].map((activity, index) => (
+              <div
+                key={index}
+                className="rounded-3xl overflow-hidden shadow-card bg-white hover:shadow-lg transition duration-300 group"
+              >
+                <img
+                  src={activity.image}
+                  alt={activity.title}
+                  className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="p-5 text-center">
+                  <h4 className="text-xl font-semibold text-blue-deep">{activity.title}</h4>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
+
       
       {/* Quick Contact */}
       <section className="py-16 gradient-primary">
