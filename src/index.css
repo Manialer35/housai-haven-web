@@ -2,41 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Housai Old Age Home Design System - Blue theme with warm accents */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Blue primary theme - calm and trustworthy */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
+    /* Deep calming blue as primary */
+    --primary: 215 70% 25%;
     --primary-foreground: 210 40% 98%;
+    --primary-light: 215 65% 35%;
+    --primary-lighter: 215 60% 85%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Soft blue-gray secondary */
+    --secondary: 215 25% 92%;
+    --secondary-foreground: 215 25% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 215 20% 95%;
+    --muted-foreground: 215 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Soft accent colors */
+    --accent: 215 20% 90%;
+    --accent-foreground: 215 25% 20%;
+    --accent-warm: 45 85% 88%;
+    --accent-gentle: 355 65% 88%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 65% 55%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 215 20% 88%;
+    --input: 215 20% 92%;
+    --ring: 215 70% 35%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
+
+    /* Custom design tokens for Housai Old Age Home */
+    --blue-deep: 215 70% 25%;
+    --blue-medium: 215 65% 35%;
+    --blue-light: 215 60% 75%;
+    --blue-lighter: 215 60% 85%;
+    --blue-subtle: 215 40% 95%;
+    
+    --warm-yellow: 45 85% 88%;
+    --gentle-red: 355 65% 88%;
+    --pure-white: 0 0% 100%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--blue-deep)), hsl(var(--blue-medium)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--blue-deep) / 0.9), hsl(var(--blue-medium) / 0.8));
+    --gradient-soft: linear-gradient(180deg, hsl(var(--pure-white)), hsl(var(--blue-subtle)));
+    --gradient-warm: linear-gradient(45deg, hsl(var(--warm-yellow) / 0.3), hsl(var(--gentle-red) / 0.2));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(var(--blue-light) / 0.15);
+    --shadow-gentle: 0 2px 10px hsl(var(--blue-light) / 0.1);
+    --shadow-card: 0 8px 30px hsl(var(--blue-deep) / 0.08);
+    
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-gentle: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +132,83 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    background: var(--gradient-soft);
+  }
+  
+  /* Custom utility classes */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-warm {
+    background: var(--gradient-warm);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-gentle {
+    box-shadow: var(--shadow-gentle);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-gentle {
+    transition: var(--transition-gentle);
+  }
+  
+  /* Animation utilities */
+  .fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Typography enhancements */
+  .heading-primary {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .heading-secondary {
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold;
+    color: hsl(var(--blue-deep));
+  }
+  
+  .text-warm {
+    color: hsl(var(--foreground) / 0.8);
   }
 }

@@ -1,0 +1,259 @@
+import React, { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Phone, Mail, MapPin, Clock, Send, Heart } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
+
+const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
+  const { toast } = useToast();
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Here you would typically handle form submission
+    toast({
+      title: "Message Sent!",
+      description: "Thank you for contacting us. We'll get back to you soon.",
+    });
+    setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+  };
+
+  return (
+    <div className="min-h-screen pt-16">
+      {/* Hero Section */}
+      <section className="py-20 gradient-primary">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            Contact Us
+          </h1>
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            We're here to answer your questions and welcome you to our family
+          </p>
+        </div>
+      </section>
+
+      {/* Contact Information & Form */}
+      <section className="py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Contact Information */}
+            <div className="fade-in">
+              <h2 className="heading-secondary mb-8">Get in Touch</h2>
+              <p className="text-lg text-warm mb-8 leading-relaxed">
+                Have questions about our services, admission process, or want to visit our facility? 
+                We'd love to hear from you. Our caring team is ready to assist you and your family.
+              </p>
+              
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-blue-deep mb-1">Phone</h3>
+                    <p className="text-muted-foreground">+91 98765 43210</p>
+                    <p className="text-muted-foreground">+91 87654 32109</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-blue-deep mb-1">Email</h3>
+                    <p className="text-muted-foreground">info@housaioldagehome.org</p>
+                    <p className="text-muted-foreground">admin@rayfoundation.org</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-blue-deep mb-1">Address</h3>
+                    <p className="text-muted-foreground">
+                      Housai Old Age Home<br />
+                      123 Care Street, Serenity Gardens<br />
+                      City, State - 123456<br />
+                      India
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Clock className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-blue-deep mb-1">Visiting Hours</h3>
+                    <p className="text-muted-foreground">
+                      Monday - Sunday: 10:00 AM - 6:00 PM<br />
+                      Emergency Contact: 24/7 Available
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Special Note */}
+              <div className="bg-accent-warm/50 rounded-2xl p-6 mt-8 border-l-4 border-blue-medium">
+                <div className="flex items-start space-x-3">
+                  <Heart className="w-6 h-6 text-blue-deep flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-semibold text-blue-deep mb-2">Schedule a Visit</h4>
+                    <p className="text-muted-foreground">
+                      We encourage families to visit our facility to see our caring environment firsthand. 
+                      Please call ahead to schedule your visit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Form */}
+            <div className="slide-up">
+              <div className="bg-white rounded-3xl p-8 shadow-card">
+                <h3 className="text-2xl font-bold text-blue-deep mb-6">Send us a Message</h3>
+                
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <label htmlFor="name" className="block text-sm font-medium text-blue-deep mb-2">
+                        Full Name *
+                      </label>
+                      <Input
+                        id="name"
+                        name="name"
+                        type="text"
+                        required
+                        value={formData.name}
+                        onChange={handleInputChange}
+                        className="w-full"
+                        placeholder="Enter your full name"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-medium text-blue-deep mb-2">
+                        Email Address *
+                      </label>
+                      <Input
+                        id="email"
+                        name="email"
+                        type="email"
+                        required
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        className="w-full"
+                        placeholder="Enter your email"
+                      />
+                    </div>
+                  </div>
+                  
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <label htmlFor="phone" className="block text-sm font-medium text-blue-deep mb-2">
+                        Phone Number
+                      </label>
+                      <Input
+                        id="phone"
+                        name="phone"
+                        type="tel"
+                        value={formData.phone}
+                        onChange={handleInputChange}
+                        className="w-full"
+                        placeholder="Enter your phone number"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="subject" className="block text-sm font-medium text-blue-deep mb-2">
+                        Subject *
+                      </label>
+                      <Input
+                        id="subject"
+                        name="subject"
+                        type="text"
+                        required
+                        value={formData.subject}
+                        onChange={handleInputChange}
+                        className="w-full"
+                        placeholder="What is this about?"
+                      />
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium text-blue-deep mb-2">
+                      Message *
+                    </label>
+                    <Textarea
+                      id="message"
+                      name="message"
+                      required
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      rows={6}
+                      className="w-full"
+                      placeholder="Please share your message, questions, or how we can help you..."
+                    />
+                  </div>
+                  
+                  <Button type="submit" variant="default" size="lg" className="w-full">
+                    <Send className="w-4 h-4 mr-2" />
+                    Send Message
+                  </Button>
+                  
+                  <p className="text-sm text-muted-foreground text-center">
+                    We typically respond within 24 hours during business days.
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Emergency Contact */}
+      <section className="py-16 bg-gradient-to-r from-accent-warm/40 to-accent-gentle/40">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-3xl p-8 shadow-card text-center">
+            <div className="w-16 h-16 gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <Phone className="w-8 h-8 text-white" />
+            </div>
+            <h2 className="text-2xl font-bold text-blue-deep mb-4">24/7 Emergency Contact</h2>
+            <p className="text-lg text-muted-foreground mb-6">
+              For urgent matters or emergencies, our care team is available around the clock.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Button variant="default" size="lg">
+                <Phone className="w-4 h-4 mr-2" />
+                Emergency: +91 98765 43210
+              </Button>
+              <Button variant="outline" size="lg">
+                <Mail className="w-4 h-4 mr-2" />
+                urgent@housaioldagehome.org
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Contact;
