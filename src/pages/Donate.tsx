@@ -76,7 +76,7 @@ const Donate = () => {
             <Heart className="w-6 h-6 text-white ml-3" />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Support India's Best Free Old Age Home | Tax-Deductible Donations | 80G Benefits
+           Tax-Deductible Donations | 80G Benefits
           </h1>
           <p className="text-xl text-white/90 max-w-4xl mx-auto mb-8">
             Support India's premier free elderly care organization with tax-deductible donations. 
