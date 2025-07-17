@@ -12,7 +12,7 @@ const HeroSlider = () => {
   const slides = [
     {
       image: hero1,
-      title: "A Home Where Love Lives",
+      title: "A Home Of Rights For The Elderly",
       subtitle: "Providing compassionate care and a warm family environment for our elderly community",
       cta: "Learn More About Us"
     },
