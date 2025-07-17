@@ -171,7 +171,7 @@ const About = () => {
                 { name: "Shri Jaywant Baburao Mali", position: "Vice Chairman" },
                 { name: "Shri Nilesh Bhimrao Bhandare", position: "Sachiv" },
                 { name: "Shri Dhanraj Vinayak Jadhav", position: "Sanchalak" },
-                { name: "Shri Hariram Bhagwan Khabale", position: "Sanchalak },
+                { name: "Shri Hariram Bhagwan Khabale", position: "Sanchalak" },
                 { name: "Shri Ajay Shivajirao Pawar", position: "Sanchalak" },
                 { name: "Adv. Shivajirao Piraji Kamble", position: "Sanchalak" },
                 { name: "Shri Nazir Munir Mujawar", position: "Sanchalak" },
