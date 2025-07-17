@@ -65,7 +65,7 @@ const Activities = () => {
       <section className="py-20 gradient-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Elderly Care Activities & Wellness Programs in Mumbai | Free Senior Recreational Therapy
+            Elderly Care Activities & Wellness Programs
           </h1>
           <p className="text-xl text-white/90 max-w-4xl mx-auto">
             Discover comprehensive elderly wellness programs at India's premier free old age home. 
@@ -127,11 +127,11 @@ const Activities = () => {
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-blue-deep mb-3">Therapeutic Nutrition Programs</h3>
-                <p className="text-muted-foreground">
+{/*                 <p className="text-muted-foreground">
                   Dietitian-designed nutritious meals shared in a warm, family-like atmosphere. Our specialized 
                   geriatric nutrition program includes diabetic-friendly options, heart-healthy meals, and 
                   therapeutic diets for elderly residents with specific health conditions.
-                </p>
+                </p> */}
               </div>
             </div>
             
@@ -143,11 +143,11 @@ const Activities = () => {
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-blue-deep mb-3">Physiotherapy & Fitness Programs</h3>
-                <p className="text-muted-foreground">
+{/*                 <p className="text-muted-foreground">
                   Professional physiotherapy sessions, gentle yoga for seniors, chair exercises, and mobility 
                   training conducted by certified geriatric fitness specialists. Programs designed to improve 
                   balance, reduce fall risk, and maintain joint flexibility for elderly residents.
-                </p>
+                </p> */}
               </div>
             </div>
             
@@ -159,11 +159,11 @@ const Activities = () => {
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-blue-deep mb-3">Art Therapy & Cognitive Stimulation</h3>
-                <p className="text-muted-foreground">
+{/*                 <p className="text-muted-foreground">
                   Structured art therapy, creative writing workshops, memory games, and cognitive exercises 
                   designed to prevent dementia and enhance mental acuity. Our occupational therapists conduct 
                   specialized programs to maintain cognitive function in elderly residents.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
