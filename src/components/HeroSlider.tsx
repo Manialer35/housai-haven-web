@@ -62,7 +62,7 @@ const HeroSlider = () => {
             style={{ backgroundImage: `url(${slide.image})` }}
           >
             {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-black/30 z-10"></div>
+            //<div className="absolute inset-0 bg-gradient-to-r from-black/30 to-black/30 z-10"></div>
             
             {/* Content */}
             <div className="relative z-10 h-full flex items-center">
