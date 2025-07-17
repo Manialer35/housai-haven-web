@@ -39,10 +39,10 @@ const Contact = () => {
       <section className="py-20 gradient-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Contact Mumbai's Best Free Old Age Home | Immediate Admission Available
+            Contact Us | Immediate Admission Available
           </h1>
           <p className="text-xl text-white/90 max-w-4xl mx-auto">
-            Get immediate free admission to Housai Old Age Home, Mumbai's premier elderly care facility. 
+            Get immediate free admission to Housai Old Age Home, Sangli's premier elderly care facility. 
             Call +91-98765-43210 for instant consultation. No waiting lists, no documentation fees, 
             no hidden charges. Serving senior citizens across Maharashtra with 24/7 medical support 
             and compassionate care since 1995.
