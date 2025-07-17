@@ -19,7 +19,7 @@ const HomePage = () => {
             <span className="text-2xl font-bold text-blue-deep">100% FREE ADMISSIONS - NO HIDDEN CHARGES</span>
             <Star className="w-6 h-6 text-blue-deep ml-3" />
           </div>
-          <h2 className="text-3xl font-bold text-blue-deep mb-4">India's Premier Free Old Age Home in Mumbai</h2>
+          <h2 className="text-3xl font-bold text-blue-deep mb-4">India's Premiere Housai Old Age Home in Sangli</h2>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
             Housai Old Age Home offers completely free elderly care services including accommodation, 
             24/7 medical support, nutritious meals, and recreational activities. No admission fees, 
@@ -42,7 +42,7 @@ const HomePage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="fade-in">
               <h2 className="heading-secondary mb-6">
-                Best Free Senior Living Facility in Mumbai, Maharashtra
+                Best Free Senior Living Facility in Sangli, Maharashtra
               </h2>
               <p className="text-lg text-warm mb-6 leading-relaxed">
                 Established by the renowned Ramdasji Athavle Youth Foundation, Housai Old Age Home 
@@ -110,7 +110,7 @@ const HomePage = () => {
       <section className="py-20 bg-muted/40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="heading-secondary mb-4">Daily Activities at India's Best Free Old Age Home</h2>
+            <h2 className="heading-secondary mb-4">Daily Activities</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Experience our comprehensive elderly care programs including yoga therapy, recreational 
               activities, festival celebrations, and wellness sessions designed for senior citizens. 
@@ -153,7 +153,7 @@ const HomePage = () => {
               Get Immediate Free Admission - Call Now!
             </h2>
             <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto">
-              Contact Mumbai's most trusted free old age home today. No waiting lists, no documentation 
+              Contact Sangli's most trusted free old age home today. No waiting lists, no documentation 
               fees, no admission charges. Visit our facility or call for immediate elderly care admission. 
               Serving senior citizens across Maharashtra with dignity and compassion.
             </p>
