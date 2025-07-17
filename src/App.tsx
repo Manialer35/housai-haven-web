@@ -1,3 +1,4 @@
+import Facilities from "./pages/Facilities";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -10,6 +11,7 @@ import About from "./pages/About";
 import Activities from "./pages/Activities";
 import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
+<Route path="/facilities" element={<Facilities />} />
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
