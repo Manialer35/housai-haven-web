@@ -266,6 +266,15 @@ const Donate = () => {
                   Receipt will be provided for all contributions.
                 </p>
               </div>
+              <div className="mt-8 text-center">
+              <h4 className="text-lg font-semibold text-white mb-2">Scan & Pay via UPI</h4>
+              <img
+                src="/src/assets/donation-qr.png"
+                alt="Donate via QR Code"
+                className="mx-auto w-48 h-48 rounded-lg border border-white/30 shadow-md"
+              />
+              <p className="text-sm text-white/70 mt-2">Scan using any UPI app to donate directly</p>
+            </div>
             </div>
           </div>
         </div>
