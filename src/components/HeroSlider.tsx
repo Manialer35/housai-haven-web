@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, ChevronRight, Star, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import hero1 from '@/assets/poster.png';
+import hero1 from '@/assets/poster 4.png';
 import hero2 from '@/assets/hero2.jpg';
 import hero3 from '@/assets/hero3.jpg';
 
