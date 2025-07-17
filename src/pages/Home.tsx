@@ -120,10 +120,10 @@ const HomePage = () => {
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
             {[
               { title: "Morning Yoga & Exercise Therapy for Seniors", image: "@/assets/activities/yoga.jpg" },
-              { title: "Therapeutic Gardening for Elderly Wellness", image: "@/assets/activities/gardening.jpg" },
-              { title: "Festival Celebrations & Cultural Events", image: "@/assets/activities/festival.jpg" },
+              { title: "Enjoyment for Elderly Wellness", image: "@/assets/activities/enjoyment.jpg" },
+              { title: "Festival Celebrations & Cultural Events", image: "@/assets/activities/festivals1.jpg" },
               { title: "Musical Instruments", image: "@/assets/activities/games.jpg" },
-              { title: "Creative Expression Sessions", image: "@/assets/activities/art.jpg" },
+              { title: "Games", image: "@/assets/activities/art.jpg" },
               { title: "Spiritual Prayer Sessions & Meditation", image: "@/assets/activities/prayers.jpg" },
             ].map((activity, index) => (
               <div
