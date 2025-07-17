@@ -139,7 +139,7 @@ const About = () => {
             {/* Main Director */}
             <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
               <img
-                src="/images/directors/main-director.jpg"
+                src="@/assets/main-director.jpg"
                 alt="Main Director"
                 className="w-48 h-48 rounded-full object-cover shadow-card"
               />
