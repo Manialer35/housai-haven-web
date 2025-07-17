@@ -83,38 +83,6 @@ const Activities = () => {
         </div>
       </section>
 
-{/*       {/* Daily Schedule */}
-      <section className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="heading-secondary mb-4">Daily Schedule</h2>
-            <p className="text-lg text-muted-foreground">
-              A well-structured day filled with care, activities, and rest
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {dailySchedule.map((item, index) => (
-              <div 
-                key={index}
-                className="bg-white rounded-2xl p-6 shadow-gentle hover:shadow-card transition-smooth fade-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center flex-shrink-0">
-                    <item.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <div className="text-lg font-bold text-blue-deep">{item.time}</div>
-                    <div className="text-muted-foreground">{item.activity}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
       {/* Activity Gallery */}
       <section className="py-20 bg-gradient-to-r from-blue-subtle/50 to-accent-warm/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -289,44 +257,7 @@ const Activities = () => {
         </div>
       </section>
 
-      // {/* Weekly Activities */}
-      // <section className="py-20 bg-background">
-      //   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      //     <div className="text-center mb-12">
-      //       <h2 className="heading-secondary mb-4">Weekly Activity Calendar</h2>
-      //       <p className="text-lg text-muted-foreground">
-      //         Special programs and activities throughout the week
-      //       </p>
-      //     </div>
-          
-      //     <div className="grid lg:grid-cols-7 md:grid-cols-2 gap-4">
-      //       {weeklyActivities.map((day, index) => (
-      //         <div 
-      //           key={index}
-      //           className="bg-white rounded-2xl p-6 shadow-gentle hover:shadow-card transition-smooth slide-up"
-      //           style={{ animationDelay: `${index * 0.1}s` }}
-      //         >
-      //           <div className="text-center mb-4">
-      //             <div className="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center mx-auto mb-3">
-      //               <Calendar className="w-6 h-6 text-white" />
-      //             </div>
-      //             <h3 className="text-lg font-bold text-blue-deep">{day.day}</h3>
-      //           </div>
-      //           <ul className="space-y-2">
-      //             {day.activities.map((activity, actIndex) => (
-      //               <li 
-      //                 key={actIndex}
-      //                 className="text-sm text-muted-foreground bg-blue-subtle rounded-lg px-3 py-2"
-      //               >
-      //                 {activity}
-      //               </li>
-      //             ))}
-      //           </ul>
-      //         </div>
-      //       ))}
-      //     </div>
-      //   </div>
-      // </section>
+  
 
       {/* Special Celebrations */}
       <section className="py-20 gradient-primary">
