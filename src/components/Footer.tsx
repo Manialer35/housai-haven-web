@@ -116,9 +116,9 @@ const Footer = () => {
             </div>
             
             <div className="text-center md:text-right">
-              <p className="text-white/80 text-sm">
+{/*               <p className="text-white/80 text-sm">
                 Built with ❤️ for our beloved elders
-              </p>
+              </p> */}
               <p className="text-white/60 text-xs mt-1">
                 A nonprofit initiative for elder care
               </p>
