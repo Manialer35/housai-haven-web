@@ -119,12 +119,12 @@ const HomePage = () => {
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
             {[
-              { title: "Morning Yoga & Exercise Therapy for Seniors", image: "/images/activities/yoga.jpg" },
-              { title: "Therapeutic Gardening for Elderly Wellness", image: "/images/activities/gardening.jpg" },
-              { title: "Festival Celebrations & Cultural Events", image: "/images/activities/festival.jpg" },
-              { title: "Brain Training Games & Mental Stimulation", image: "/images/activities/games.jpg" },
-              { title: "Art Therapy & Creative Expression Sessions", image: "/images/activities/art.jpg" },
-              { title: "Spiritual Prayer Sessions & Meditation", image: "/images/activities/prayers.jpg" },
+              { title: "Morning Yoga & Exercise Therapy for Seniors", image: "@/assets/activities/yoga.jpg" },
+              { title: "Therapeutic Gardening for Elderly Wellness", image: "@/assets/activities/gardening.jpg" },
+              { title: "Festival Celebrations & Cultural Events", image: "@/assets/activities/festival.jpg" },
+              { title: "Musical Instruments", image: "@/assets/activities/games.jpg" },
+              { title: "Creative Expression Sessions", image: "@/assets/activities/art.jpg" },
+              { title: "Spiritual Prayer Sessions & Meditation", image: "@/assets/activities/prayers.jpg" },
             ].map((activity, index) => (
               <div
                 key={index}
