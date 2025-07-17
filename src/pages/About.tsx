@@ -157,10 +157,10 @@ const About = () => {
                 className="w-48 h-48 rounded-full object-cover shadow-card"
               />
               <div>
-                <h3 className="text-2xl font-bold text-blue-deep mb-2">Shri. Suresh Athavle</h3>
-                <p className="text-lg text-blue-medium mb-2">Founder & Chief Director - Leading Free Elderly Care Expert in Maharashtra</p>
+                <h3 className="text-2xl font-bold text-blue-deep mb-2">Shri. Siddharth Anil Kamble</h3>
+                <p className="text-lg text-blue-medium mb-2">Chairman - Leading Free Elderly Care Expert in Maharashtra</p>
                 <p className="text-muted-foreground mb-2">25+ Years Experience in Geriatric Care & Social Work</p>
-                <p className="text-muted-foreground">Direct Contact: <a href="tel:+919812345678" className="text-blue-medium hover:underline font-semibold">+91 98123 45678</a></p>
+                <p className="text-muted-foreground">Direct Contact: <a href="tel:+917058581111" className="text-blue-medium hover:underline font-semibold">+917058581111</a></p>
                 <p className="text-sm text-muted-foreground mt-2">Available for immediate consultation regarding elderly care admission</p>
               </div>
             </div>
@@ -168,12 +168,19 @@ const About = () => {
             {/* List of Directors */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { name: "Meena Patil", position: "Managing Director", phone: "+91 98222 33445" },
-                { name: "Ramesh Deshmukh", position: "Operations Director", phone: "+91 98444 55667" },
-                { name: "Kavita Joshi", position: "Finance Director", phone: "+91 98765 43210" },
-                { name: "Anil Pawar", position: "Medical Director", phone: "+91 98333 66778" },
-                { name: "Sunita Khedekar", position: "Programs Director", phone: "+91 98000 11223" },
-                { name: "Vikas Bhosale", position: "HR Director", phone: "+91 98666 77889" }
+                { name: "Shri Jaywant Baburao Mali", position: "Vice Chairman" },
+                { name: "Shri Nilesh Bhimrao Bhandare", position: "Sachiv" },
+                { name: "Shri Dhanraj Vinayak Jadhav", position: "Sanchalak" },
+                { name: "Shri Hariram Bhagwan Khabale", position: "Sanchalak },
+                { name: "Shri Ajay Shivajirao Pawar", position: "Sanchalak" },
+                { name: "Adv. Shivajirao Piraji Kamble", position: "Sanchalak" },
+                { name: "Shri Nazir Munir Mujawar", position: "Sanchalak" },
+                { name: "Shri Mahendra Dharma Gade", position: "Sanchalak" },
+                { name: "Shri Jitendra Dilip Pawar", position: "Sanchalak" },
+                { name: "Sau Chitratai Bhimrao Bhandare", position: "Sanchalika" },
+                { name: "Shri Adv. Atul Dange", position: "Sanchalak" },
+                { name: "Shri Vikas Shankarrao Bhandare", position: "Sanchalak" }
+      
               ].map((director, index) => (
                 <div
                   key={index}
