@@ -14,7 +14,7 @@ const About = () => {
             <Star className="w-6 h-6 text-white ml-3" />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            About Housai Old Age Home | Ramdasji Athavle Youth Foundation
+            About Housai Old Age Home | Khaasdar Ramdasji Athawle Youth Foundation
           </h1>
           <p className="text-xl text-white/90 max-w-4xl mx-auto">
             Discover the story behind India's most trusted free elderly care center, established by 
@@ -31,7 +31,7 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="fade-in">
               <h2 className="heading-secondary mb-6">
-                Ramdasji Athavle Youth Foundation - Pioneering Free Elderly Care in India
+                Ramdasji Athawle Youth Foundation - Pioneering Free Elderly Care in India
               </h2>
               <p className="text-lg text-warm mb-6 leading-relaxed">
                 Established in 1995, the Ramdasji Athavle Youth Foundation has emerged as Maharashtra's 
@@ -150,9 +150,30 @@ const About = () => {
             </div>
         
             {/* Main Director */}
+
+            <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
+            <ClickableImage
+              src="/public/assets/sandesh-founder.jpg"
+              alt="Shri. Sandesh Bhau Bhandare - President and Founder"
+              className="w-48 h-48 rounded-full object-cover shadow-card"
+            />
+            <div>
+              <h3 className="text-2xl font-bold text-blue-deep mb-2">Shri. Sandesh Bhau Bhandare</h3>
+              <p className="text-lg text-blue-medium mb-2">President & Founder</p>
+              <p className="text-muted-foreground mb-2">Visionary leader with a passion for serving the elderly</p>
+              <p className="text-muted-foreground">
+                Under his dynamic leadership, the foundation was established with a mission to serve underprivileged senior citizens
+                with love, dignity, and holistic care across Maharashtra.
+              </p>
+              <p className="text-sm text-muted-foreground mt-2">
+                Direct Contact: <a href="tel:+919975601777" className="text-blue-medium hover:underline font-semibold">+91 99756 01777</a>
+              </p>
+            </div>
+            </div>
+            
             <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
               <ClickableImage
-                src="/images/directors/main-director.jpg"
+                src="/public/assets/main-director.jpg"
                 alt="Shri. Suresh Athavle - Founder and Chief Director of Housai Old Age Home Mumbai"
                 className="w-48 h-48 rounded-full object-cover shadow-card"
               />
