@@ -156,7 +156,7 @@ const HomePage = () => {
               { title: "Morning Yoga", image: yoga },
               { title: "Enjoyment", image: enjoyment },
               { title: "Festivals", image: festivals },
-              { title: "MusicalInstruments", image: games },
+              { title: "Musical Instruments", image: games },
               { title: "Games", image: art },
               { title: "Prayers", image: prayers },
             ].map((activity, index) => (
