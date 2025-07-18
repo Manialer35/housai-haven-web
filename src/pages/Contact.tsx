@@ -82,9 +82,9 @@ const Contact = () => {
           </h1>
           <p className="text-xl text-white/90 max-w-4xl mx-auto">
             Get immediate free admission to Housai Old Age Home, Sangli's premier elderly care facility. 
-            Call +91-98765-43210 for instant consultation. No waiting lists, no documentation fees, 
+            Call 0233-3560136 for instant consultation. No waiting lists, no documentation fees, 
             no hidden charges. Serving senior citizens across Maharashtra with 24/7 medical support 
-            and compassionate care since 1995.
+            and compassionate care since 2007.
           </p>
         </div>
       </section>
