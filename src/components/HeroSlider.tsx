@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight, Star, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import hero1 from '@/assets/poster5.png';
 import hero2 from '@/assets/poster01.png';
-import hero3 from '@/assets/hero3.jpg';
+import hero3 from '@/assets/Slider3.jpg';
 
 const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
