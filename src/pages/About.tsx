@@ -164,7 +164,7 @@ const About = () => {
 
             <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
             <ClickableImage
-              src="/public/assets/Founder.png"
+              src="/assets/Founder.png"
               alt="Shri. Sandesh Bhau Bhandare - President and Founder"
               className="w-48 h-48 rounded-full object-cover shadow-card"
             />
@@ -184,7 +184,7 @@ const About = () => {
             
             <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
               <ClickableImage
-                src="/public/assets/main-director.jpg"
+                src="/assets/main-director.jpg"
                 alt="Shri. Suresh Athavle - Founder and Chief Director of Housai Old Age Home Mumbai"
                 className="w-48 h-48 rounded-full object-cover shadow-card"
               />
@@ -220,9 +220,6 @@ const About = () => {
                 >
                   <h4 className="text-lg font-semibold text-blue-deep">{director.name}</h4>
                   <p className="text-muted-foreground">{director.position}</p>
-                  <p className="text-muted-foreground text-sm mt-1">
-                    Contact: <a href={`tel:${director.phone}`} className="text-blue-medium hover:underline">{director.phone}</a>
-                  </p>
                 </div>
               ))}
             </div>

@@ -11,6 +11,34 @@ const HomePage = () => {
       {/* Hero Section */}
       <HeroSlider />
 
+      {/* Welcome Video Section */}
+      <section className="py-20 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="heading-secondary mb-6">Welcome to Our Foundation</h2>
+            <p className="text-lg text-warm max-w-3xl mx-auto mb-8 leading-relaxed">
+              Watch this introductory video to learn more about our mission, facilities, and the 
+              compassionate care we provide to senior citizens at Housai Old Age Home. Discover 
+              how we create a loving home environment for elderly residents across Maharashtra.
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="relative bg-white rounded-3xl shadow-card overflow-hidden">
+              <div className="aspect-video">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  title="Housai Old Age Home - Welcome Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Free Admission Highlight */}
       <section className="py-16 bg-gradient-to-r from-accent-warm/30 to-accent-gentle/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -119,12 +147,12 @@ const HomePage = () => {
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
             {[
-              { title: "Morning Yoga & Exercise Therapy for Seniors", image: "@/assets/activities/yoga.jpg" },
-              { title: "Enjoyment for Elderly Wellness", image: "@/assets/activities/enjoyment.jpg" },
-              { title: "Festival Celebrations & Cultural Events", image: "@/assets/activities/festivals1.jpg" },
-              { title: "Musical Instruments", image: "@/assets/activities/games.webp" },
-              { title: "Games", image: "@/assets/activities/art.jpeg" },
-              { title: "Spiritual Prayer Sessions & Meditation", image: "@/assets/activities/prayers.jpg" },
+              { title: "Morning Yoga & Exercise Therapy for Seniors", image: "/assets/activities/yoga.jpg" },
+              { title: "Enjoyment for Elderly Wellness", image: "/assets/activities/enjoyment.jpg" },
+              { title: "Festival Celebrations & Cultural Events", image: "/assets/activities/festivals1.jpg" },
+              { title: "Musical Instruments", image: "/assets/activities/games.webp" },
+              { title: "Games", image: "/assets/activities/art.jpeg" },
+              { title: "Spiritual Prayer Sessions & Meditation", image: "/assets/activities/prayers.jpg" },
             ].map((activity, index) => (
               <div
                 key={index}

@@ -79,12 +79,12 @@ const Activities = () => {
           <h2 className="heading-secondary text-center mb-12">A Glimpse of Our Activities</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {[
-              "/src/assets/activities1.jpg",
-              "/src/assets/activities2.jpg",
-              "/src/assets/activities3.jpg",
-              "/src/assets/activities4.jpg",
-              "/src/assets/activities5.jpg",
-              "/src/assets/activities6.jpg",
+              "/activities1.jpg",
+              "/activities2.jpg", 
+              "/activities3.jpg",
+              "/activities4.jpg",
+              "/activities5.jpg",
+              "/activities6.jpg",
             ].map((src, idx) => (
               <div key={idx} className="overflow-hidden rounded-3xl shadow">
                 <img
