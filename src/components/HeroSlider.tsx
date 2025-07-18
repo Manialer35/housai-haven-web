@@ -24,9 +24,9 @@ const HeroSlider = () => {
     },
     {
       image: hero3,
-      title: "Peaceful & Spiritual Environment",
-      subtitle: "A serene atmosphere where our residents find peace, comfort, and spiritual fulfillment",
-      cta: "Visit Us Today"
+      // title: "Peaceful & Spiritual Environment",
+      // subtitle: "A serene atmosphere where our residents find peace, comfort, and spiritual fulfillment",
+      // cta: "Visit Us Today"
     }
   ];
 
