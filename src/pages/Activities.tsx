@@ -1,6 +1,13 @@
 import React from "react";
 import HeroSlider from "@/components/HeroSlider";
 import { Heart, Dumbbell, Users, BookOpen } from "lucide-react";
+import activity1 from "@/assets/activities1.jpg";
+import activity2 from "@/assets/activities2.jpg";
+import activity3 from "@/assets/activities3.jpg";
+import activity4 from "@/assets/activities4.jpg";
+import activity5 from "@/assets/activities5.jpg";
+import activity6 from "@/assets/activities6.jpg";
+
 
 const Activities = () => {
   const benefits = [
@@ -79,12 +86,12 @@ const Activities = () => {
           <h2 className="heading-secondary text-center mb-12">A Glimpse of Our Activities</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {[
-              "/activities1.jpg",
-              "/activities2.jpg", 
-              "/activities3.jpg",
-              "/activities4.jpg",
-              "/activities5.jpg",
-              "/activities6.jpg",
+              activity1,
+              activity2,
+              activity3,
+              activity4,
+              activity5,
+              activity6,
             ].map((src, idx) => (
               <div key={idx} className="overflow-hidden rounded-3xl shadow">
                 <img
