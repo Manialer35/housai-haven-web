@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 import yoga from '@/assets/yoga.jpg';
 import enjoyment from '@/assets/enjoyment.jpg';
 import festivals from '@/assets/festivals1.jpg';
-import games from '@/assets/games.webp';
-import art from '@/assets/art.jpeg';
+import MusicalInstruments from '@/assets/games.webp';
+import Games from '@/assets/art.jpeg';
 import prayers from '@/assets/prayers.jpg';
 
 const HomePage = () => {
@@ -156,8 +156,8 @@ const HomePage = () => {
               { title: "Morning Yoga", image: yoga },
               { title: "Enjoyment", image: enjoyment },
               { title: "Festivals", image: festivals },
-              { title: "Games", image: games },
-              { title: "Art", image: art },
+              { title: "MusicalInstruments", image: games },
+              { title: "Games", image: art },
               { title: "Prayers", image: prayers },
             ].map((activity, index) => (
               <div
