@@ -17,7 +17,7 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold">Housai Old Age Home</h3>
-                <p className="text-sm text-white/70">Ramdasji Athavle Youth Foundation</p>
+                <p className="text-sm text-white/70">Khasdar Ramdasji Athavle Youth Foundation</p>
               </div>
             </div>
             <p className="text-white/80 mb-4 leading-relaxed">
@@ -111,7 +111,7 @@ const Footer = () => {
                 © {currentYear} Housai Old Age Home. All rights reserved.
               </p>
               <p className="text-white/60 text-xs mt-1">
-                Operated by Ramdasji Athavle Youth Foundation
+                Operated by Khasdar Ramdasji Athavle Youth Foundation
               </p>
             </div>
             
