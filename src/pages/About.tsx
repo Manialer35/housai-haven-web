@@ -34,22 +34,33 @@ const About = () => {
                 Ramdasji Athawle Youth Foundation - Pioneering Free Elderly Care in India
               </h2>
               <p className="text-lg text-warm mb-6 leading-relaxed">
-                Established in 1995, the Ramdasji Athavle Youth Foundation has emerged as Maharashtra's 
-                leading non-profit organization dedicated to providing free elderly care services. 
-                Named after the revered social reformer and spiritual leader Ramdasji Athavle, our 
-                foundation has successfully served over 2,000 senior citizens across Mumbai, Pune, 
-                Nashik, and rural Maharashtra through comprehensive geriatric care programs.
+                Established in 2007 under the visionary guidance of Union Minister Hon. Ramdas Athawle Saheb, 
+                the Khasdar Ramdasji Athawle Youth Foundation (Regd.) is a leading social enterprise in India, 
+                committed to holistic societal development. Our foundation focuses on empowering the disabled, 
+                orphans, economically backward communities, child laborers, and senior citizens through inclusive
+                welfare initiatives and awareness programs across Maharashtra and beyond.
               </p>
               <p className="text-lg text-warm mb-6 leading-relaxed">
-                Our mission encompasses free old age home services, medical care for elderly, 
-                physiotherapy for seniors, nutritional counseling, dementia care, and recreational 
-                therapy. We operate with a team of 50+ certified healthcare professionals, social 
-                workers, and volunteers, ensuring 24/7 monitoring and personalized care for each resident.
+                With active operations across India, and a strong presence in Sangli district,
+                our mission is to bridge the gap between underprivileged citizens and government 
+                welfare schemes. We conduct impactful programs addressing healthcare, agriculture,
+                arts, education, sports, culture, and social reform. Through a dedicated team of 
+                volunteers and experts, we reach the grassroots to implement sustainable change.
               </p>
               <p className="text-lg text-warm mb-6 leading-relaxed">
-                Recognized by the Government of Maharashtra and awarded the "Best NGO for Elderly Care" 
-                in 2023, our foundation maintains partnerships with leading hospitals, medical colleges, 
-                and healthcare institutions to provide specialized geriatric services at no cost to families.
+                Our Key Initiatives
+                1. Empowerment of marginalized communities including the disabled, widows, elderly,
+                and economically weaker sections.
+                2. Organizing state-wide awareness lectures, cultural events, and harmony campaigns 
+                on national holidays like 26th January (Republic Day) and 15th August (Independence Day).
+                3. Housing support: Provided permanent homes to over 458 homeless individuals in 
+                Sangli district.
+                4. Promoting education by supporting talented students with hostel accommodations and
+                college admissions.
+                5. Special support for Bahujans, farmers, and patients with chronic and life-threatening 
+                diseases.
+                6. Launching Sangli Helpline: An immediate assistance platform inaugurated at Sahyadri Guest
+                House, Mumbai by Union Minister Ramdas Athawle on December 25, the foundation’s anniversary.
               </p>
               <div className="bg-accent-warm/50 rounded-2xl p-6 border-l-4 border-blue-medium">
                 <p className="text-blue-deep font-semibold italic">
@@ -153,7 +164,7 @@ const About = () => {
 
             <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
             <ClickableImage
-              src="/public/assets/sandesh-founder.jpg"
+              src="/public/assets/Founder.png"
               alt="Shri. Sandesh Bhau Bhandare - President and Founder"
               className="w-48 h-48 rounded-full object-cover shadow-card"
             />
