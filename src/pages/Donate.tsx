@@ -245,23 +245,23 @@ const Donate = () => {
               <div className="space-y-4 text-white">
                 <div>
                   <span className="font-semibold">Account Name:</span>
-                  <p>Ramdasji Athavle Youth Foundation</p>
+                  <p>Khaasdar Ramdasji Athawle Youth Foundation</p>
                 </div>
                 <div>
                   <span className="font-semibold">Account Number:</span>
-                  <p>123456789012</p>
+                  <p>161120110000274</p>
                 </div>
                 <div>
                   <span className="font-semibold">IFSC Code:</span>
-                  <p>ABCD0123456</p>
+                  <p>BKID0001611</p>
                 </div>
                 <div>
                   <span className="font-semibold">Bank Name:</span>
-                  <p>State Bank of India</p>
+                  <p>Bank of India</p>
                 </div>
                 <div>
                   <span className="font-semibold">Branch:</span>
-                  <p>Main Branch, City</p>
+                  <p>Tasgaon</p>
                 </div>
               </div>
               <div className="mt-6 p-4 bg-white/10 rounded-xl">
