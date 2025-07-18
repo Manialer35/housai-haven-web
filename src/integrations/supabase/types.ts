@@ -14,7 +14,108 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      contact_submissions: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          message: string
+          name: string
+          phone: string | null
+          status: string | null
+          subject: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          message: string
+          name: string
+          phone?: string | null
+          status?: string | null
+          subject: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          message?: string
+          name?: string
+          phone?: string | null
+          status?: string | null
+          subject?: string
+        }
+        Relationships: []
+      }
+      donations: {
+        Row: {
+          amount: number | null
+          created_at: string
+          donation_type: string | null
+          donor_email: string
+          donor_name: string
+          id: string
+          message: string | null
+          status: string | null
+        }
+        Insert: {
+          amount?: number | null
+          created_at?: string
+          donation_type?: string | null
+          donor_email: string
+          donor_name: string
+          id?: string
+          message?: string | null
+          status?: string | null
+        }
+        Update: {
+          amount?: number | null
+          created_at?: string
+          donation_type?: string | null
+          donor_email?: string
+          donor_name?: string
+          id?: string
+          message?: string | null
+          status?: string | null
+        }
+        Relationships: []
+      }
+      volunteer_applications: {
+        Row: {
+          availability: string | null
+          created_at: string
+          email: string
+          experience: string | null
+          id: string
+          motivation: string | null
+          name: string
+          phone: string | null
+          status: string | null
+        }
+        Insert: {
+          availability?: string | null
+          created_at?: string
+          email: string
+          experience?: string | null
+          id?: string
+          motivation?: string | null
+          name: string
+          phone?: string | null
+          status?: string | null
+        }
+        Update: {
+          availability?: string | null
+          created_at?: string
+          email?: string
+          experience?: string | null
+          id?: string
+          motivation?: string | null
+          name?: string
+          phone?: string | null
+          status?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
