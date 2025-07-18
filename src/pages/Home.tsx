@@ -19,7 +19,7 @@ const HomePage = () => {
             <span className="text-2xl font-bold text-blue-deep">100% FREE ADMISSIONS - NO HIDDEN CHARGES</span>
             <Star className="w-6 h-6 text-blue-deep ml-3" />
           </div>
-          <h2 className="text-3xl font-bold text-blue-deep mb-4">India's Premiere Housai Old Age Home in Sangli</h2>
+          <h2 className="text-3xl font-bold text-blue-deep mb-4">Central Government Affiliated Housai Old Age Home in Sangli</h2>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto">
             Housai Old Age Home offers completely free elderly care services including accommodation, 
             24/7 medical support, nutritious meals, and recreational activities. No admission fees, 
