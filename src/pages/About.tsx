@@ -14,7 +14,7 @@ const About = () => {
             <Star className="w-6 h-6 text-white ml-3" />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            About Housai Old Age Home | Khaasdar Ramdasji Athawle Youth Foundation
+            About Housai Old Age Home | Khasdar Ramdasji Athawle Youth Foundation
           </h1>
           <p className="text-xl text-white/90 max-w-4xl mx-auto">
             Discover the story behind India's most trusted free elderly care center, established by 
@@ -31,7 +31,7 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="fade-in">
               <h2 className="heading-secondary mb-6">
-                Ramdasji Athawle Youth Foundation - Pioneering Free Elderly Care in India
+                Khasdar Ramdasji Athawle Youth Foundation - Pioneering Free Elderly Care in India
               </h2>
               <p className="text-lg text-warm mb-6 leading-relaxed">
                 Established in 2007 under the visionary guidance of Union Minister Hon. Ramdas Athawle Saheb, 
