@@ -1,5 +1,6 @@
 import React from 'react';
 import ClickableImage from '@/components/ClickableImage';
+import DonationForm from '@/components/DonationForm';
 import { Button } from '@/components/ui/button';
 import { Heart, Users, Home, Utensils, Stethoscope, Gift, Star, ArrowRight } from 'lucide-react';
 import donationQR from '@/assets/donation-qr.png';
@@ -204,8 +205,8 @@ const Donate = () => {
       {/* Donation Details */}
       <section className="py-20 gradient-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white">
+          <div className="grid lg:grid-cols-3 gap-12 items-start">
+            <div className="lg:col-span-2 text-white">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 How to Donate
               </h2>
@@ -238,47 +239,48 @@ const Donate = () => {
                   </div>
                 </div>
               </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-6 border border-white/20 mt-8">
+                <h3 className="text-xl font-bold text-white mb-4">Bank Details</h3>
+                <div className="grid md:grid-cols-2 gap-4 text-white text-sm">
+                  <div>
+                    <span className="font-semibold">Account Name:</span>
+                    <p>Khaasdar Ramdasji Athawle Youth Foundation</p>
+                  </div>
+                  <div>
+                    <span className="font-semibold">Account Number:</span>
+                    <p>161120110000274</p>
+                  </div>
+                  <div>
+                    <span className="font-semibold">IFSC Code:</span>
+                    <p>BKID0001611</p>
+                  </div>
+                  <div>
+                    <span className="font-semibold">Bank Name:</span>
+                    <p>Bank of India, Tasgaon</p>
+                  </div>
+                </div>
+                <div className="mt-4 p-3 bg-white/10 rounded-xl">
+                  <p className="text-xs text-white/90">
+                    <strong>Note:</strong> All donations are eligible for tax deduction under Section 80G. 
+                    Receipt will be provided for all contributions.
+                  </p>
+                </div>
+                <div className="mt-6 text-center">
+                  <h4 className="text-lg font-semibold text-white mb-2">Scan & Pay via UPI</h4>
+                  <ClickableImage
+                    src={donationQR}
+                    alt="UPI QR Code for donating to Housai Old Age Home Mumbai - Instant tax-deductible donations"
+                    className="mx-auto w-32 h-32 rounded-lg border border-white/30 shadow-md"
+                  />
+                  <p className="text-xs text-white/70 mt-2">Scan using any UPI app to donate directly</p>
+                </div>
+              </div>
             </div>
             
-            <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
-              <h3 className="text-2xl font-bold text-white mb-6 text-center">Bank Details</h3>
-              <div className="space-y-4 text-white">
-                <div>
-                  <span className="font-semibold">Account Name:</span>
-                  <p>Khaasdar Ramdasji Athawle Youth Foundation</p>
-                </div>
-                <div>
-                  <span className="font-semibold">Account Number:</span>
-                  <p>161120110000274</p>
-                </div>
-                <div>
-                  <span className="font-semibold">IFSC Code:</span>
-                  <p>BKID0001611</p>
-                </div>
-                <div>
-                  <span className="font-semibold">Bank Name:</span>
-                  <p>Bank of India</p>
-                </div>
-                <div>
-                  <span className="font-semibold">Branch:</span>
-                  <p>Tasgaon</p>
-                </div>
-              </div>
-              <div className="mt-6 p-4 bg-white/10 rounded-xl">
-                <p className="text-sm text-white/90">
-                  <strong>Note:</strong> All donations are eligible for tax deduction under Section 80G. 
-                  Receipt will be provided for all contributions.
-                </p>
-              </div>
-              <div className="mt-8 text-center">
-              <h4 className="text-lg font-semibold text-white mb-2">Scan & Pay via UPI</h4>
-              <ClickableImage
-                src={donationQR}
-                alt="UPI QR Code for donating to Housai Old Age Home Mumbai - Instant tax-deductible donations"
-                className="mx-auto w-48 h-48 rounded-lg border border-white/30 shadow-md"
-              />
-              <p className="text-sm text-white/70 mt-2">Scan using any UPI app to donate directly</p>
-            </div>
+            {/* Donation Form */}
+            <div className="lg:col-span-1">
+              <DonationForm className="bg-white/95 backdrop-blur-sm" />
             </div>
           </div>
         </div>

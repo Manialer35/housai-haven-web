@@ -12,3 +12,6 @@ port = 54322
 
 [functions.send-contact-email]
 verify_jwt = false
+
+[functions.process-donation]
+verify_jwt = false
