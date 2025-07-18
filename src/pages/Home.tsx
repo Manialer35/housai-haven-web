@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 import yoga from '@/assets/yoga.jpg';
 import enjoyment from '@/assets/enjoyment.jpg';
 import festivals from '@/assets/festivals1.jpg';
-import MusicalInstruments from '@/assets/games.webp';
-import Games from '@/assets/art.jpeg';
+import games from '@/assets/games.webp';
+import art from '@/assets/art.jpeg';
 import prayers from '@/assets/prayers.jpg';
 
 const HomePage = () => {
