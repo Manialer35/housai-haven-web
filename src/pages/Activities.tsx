@@ -30,31 +30,6 @@ const Activities = () => {
     },
   ];
 
-      {/* Activities Gallery */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="heading-secondary text-center mb-12">A Glimpse of Our Activities</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {[
-              "@/assets/activities1.jpg",
-              "@/assets/activities2.jpg",
-              "@/assets/activities3.jpg",
-              "@/assets/activities4.jpg",
-              "@/assets/activities5.jpg",
-              "@/assets/activities6.jpg",
-            ].map((src, idx) => (
-              <div key={idx} className="overflow-hidden rounded-3xl shadow">
-                <img
-                  src={src}
-                  alt={`Activity ${idx + 1}`}
-                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
 
   return (
     <div className="min-h-screen pt-16">
@@ -97,7 +72,33 @@ const Activities = () => {
           </div>
         </div>
       </section>
+
+      {/* Activities Gallery */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="heading-secondary text-center mb-12">A Glimpse of Our Activities</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {[
+              "@/assets/activities1.jpg",
+              "@/assets/activities2.jpg",
+              "@/assets/activities3.jpg",
+              "@/assets/activities4.jpg",
+              "@/assets/activities5.jpg",
+              "@/assets/activities6.jpg",
+            ].map((src, idx) => (
+              <div key={idx} className="overflow-hidden rounded-3xl shadow">
+                <img
+                  src={src}
+                  alt={`Activity ${idx + 1}`}
+                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
+    
   );
 };
 
