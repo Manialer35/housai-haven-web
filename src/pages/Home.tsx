@@ -4,6 +4,12 @@ import ClickableImage from '@/components/ClickableImage';
 import { Button } from '@/components/ui/button';
 import { Heart, Users, Home, Star, ArrowRight, Phone, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import yoga from '@/assets/yoga.jpg';
+import enjoyment from '@/assets/enjoyment.jpg';
+import festivals from '@/assets/festivals1.jpg';
+import games from '@/assets/games.webp';
+import art from '@/assets/art.jpeg';
+import prayers from '@/assets/prayers.jpg';
 
 const HomePage = () => {
   return (
@@ -147,12 +153,12 @@ const HomePage = () => {
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
             {[
-              { title: "Morning Yoga & Exercise Therapy for Seniors", image: "/assets/yoga.jpg" },
-              { title: "Enjoyment for Elderly Wellness", image: "/assets/enjoyment.jpg" },
-              { title: "Festival Celebrations & Cultural Events", image: "/assets/festivals1.jpg" },
-              { title: "Musical Instruments", image: "/assets/games.webp" },
-              { title: "Games", image: "/assets/art.jpeg" },
-              { title: "Spiritual Prayer Sessions & Meditation", image: "/assets/prayers.jpg" },
+              { title: "Morning Yoga", image: yoga },
+              { title: "Enjoyment", image: enjoyment },
+              { title: "Festivals", image: festivals },
+              { title: "Games", image: games },
+              { title: "Art", image: art },
+              { title: "Prayers", image: prayers },
             ].map((activity, index) => (
               <div
                 key={index}
@@ -160,7 +166,7 @@ const HomePage = () => {
               >
                 <ClickableImage
                   src={activity.image}
-                  alt={`${activity.title} at Housai Old Age Home - Free elderly care activities in Mumbai`}
+                  alt={activity.title}
                   className="w-full h-52"
                 />
                 <div className="p-5 text-center">
