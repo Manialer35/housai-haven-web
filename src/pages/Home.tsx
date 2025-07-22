@@ -79,7 +79,7 @@ const HomePage = () => {
                 Best Free Senior Living Facility in Sangli, Maharashtra
               </h2>
               <p className="text-lg text-warm mb-6 leading-relaxed">
-                Established by the renowned Ramdasji Athavle Youth Foundation, Housai Old Age Home 
+                Established by the renowned Khasdar Ramdasji Athavle Youth Foundation, Housai Old Age Home 
                 stands as India's leading free elderly care center, providing comprehensive geriatric 
                 services without any cost. Our state-of-the-art facility serves senior citizens from 
                 Mumbai, Pune, Nashik, and across Maharashtra with world-class amenities and 24/7 medical support.
