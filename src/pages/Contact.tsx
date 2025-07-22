@@ -310,11 +310,11 @@ const Contact = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button variant="default" size="lg">
                 <Phone className="w-4 h-4 mr-2" />
-                Emergency: +91 98765 43210
+                Emergency: 0233-3560136
               </Button>
               <Button variant="outline" size="lg">
                 <Mail className="w-4 h-4 mr-2" />
-                urgent@housaioldagehome.org
+                info@housaioldagehome.com
               </Button>
             </div>
           </div>
