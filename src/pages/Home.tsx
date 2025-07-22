@@ -34,7 +34,7 @@ const HomePage = () => {
                 <video
                   className="w-full h-full object-cover"
                   controls
-                  poster="/assets/video-poster.jpg"
+                  poster="/assets/HousaiIntro.png"
                 >
                   <source src="/assets/HIntro.mp4" type="video/mp4" />
                   <source src="/assets/housai-welcome-video.webm" type="video/webm" />
