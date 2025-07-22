@@ -29,7 +29,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send email to the organization
     const emailResponse = await resend.emails.send({
-      from: "Housai Old Age Home <noreply@housaioldagehome.com>",
+      from: "Housai Old Age Home <onboarding@resend.dev>",
       to: ["info@housaioldagehome.com"],
       subject: `New Contact Form Submission: ${formData.subject}`,
       html: `
@@ -63,7 +63,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send confirmation email to the sender
     const confirmationResponse = await resend.emails.send({
-      from: "Housai Old Age Home <noreply@housaioldagehome.com>",
+      from: "Housai Old Age Home <onboarding@resend.dev>",
       to: [formData.email],
       subject: "Thank you for contacting Housai Old Age Home",
       html: `
