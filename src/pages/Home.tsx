@@ -31,14 +31,15 @@ const HomePage = () => {
           <div className="max-w-4xl mx-auto">
             <div className="relative bg-white rounded-3xl shadow-card overflow-hidden">
               <div className="aspect-video">
-                <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                  title="Housai Old Age Home - Welcome Video"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+                <video
+                  className="w-full h-full object-cover"
+                  controls
+                  poster="/assets/video-poster.jpg"
+                >
+                  <source src="/assets/housai-welcome-video.mp4" type="video/mp4" />
+                  <source src="/assets/housai-welcome-video.webm" type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>
