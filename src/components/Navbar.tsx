@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Heart } from 'lucide-react';
+import logo from '@/assets/HousaiLogo.png'; 
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,9 +26,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 gradient-primary rounded-xl flex items-center justify-center">
-              <Heart className="w-6 h-6 text-white" />
-            </div>
+            <img src={logo} alt="Logo" className="w-10 h-10 rounded-xl object-cover" />
             <div className="flex flex-col">
               <span className="text-lg font-bold text-blue-deep">Housai</span>
               <span className="text-xs text-muted-foreground">Old Age Home</span>
