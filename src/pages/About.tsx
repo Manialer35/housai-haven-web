@@ -184,7 +184,7 @@ const About = () => {
             
             <div className="flex flex-col md:flex-row items-center gap-8 mb-16">
               <ClickableImage
-                src="/assets/main-director.jpg"
+                src="/assets/Chairman.png"
                 alt="Shri. Siddharth Anil Kamble - Founder and Chief Director of Housai Old Age Home Mumbai"
                 className="w-48 h-48 rounded-full object-cover shadow-card"
               />
