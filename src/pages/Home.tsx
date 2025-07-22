@@ -36,7 +36,7 @@ const HomePage = () => {
                   controls
                   poster="/assets/video-poster.jpg"
                 >
-                  <source src="/assets/housai-welcome-video.mp4" type="video/mp4" />
+                  <source src="/assets/HIntro.mp4" type="video/mp4" />
                   <source src="/assets/housai-welcome-video.webm" type="video/webm" />
                   Your browser does not support the video tag.
                 </video>
