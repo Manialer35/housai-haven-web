@@ -1,7 +1,10 @@
 import { serve } from "https://deno.land/std@0.190.0/http/server.ts";
 import { Resend } from "npm:resend@2.0.0";
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2.39.3";
 
 const resend = new Resend(Deno.env.get("RESEND_API_KEY"));
+const supabaseUrl = Deno.env.get("SUPABASE_URL") || "";
+const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -27,7 +30,60 @@ const handler = async (req: Request): Promise<Response> => {
     const formData: ContactFormData = await req.json();
     console.log("Contact form submission:", formData);
 
-    // Send email to the organization
+    // Initialize Supabase client
+    const supabase = createClient(supabaseUrl, supabaseServiceKey);
+
+    // Save to the inquiries table first (this ensures we never lose data)
+    const { data: inquiryData, error: inquiryError } = await supabase
+      .from("inquiries")
+      .insert([
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject,
+          message: formData.message,
+          status: "new",
+          priority: "normal"
+        }
+      ])
+      .select();
+
+    if (inquiryError) {
+      console.error("Error saving to inquiries table:", inquiryError);
+      return new Response(
+        JSON.stringify({ 
+          success: false, 
+          message: "Failed to save inquiry",
+          error: inquiryError 
+        }),
+        {
+          status: 500,
+          headers: { "Content-Type": "application/json", ...corsHeaders },
+        }
+      );
+    }
+
+    console.log("Inquiry saved with ID:", inquiryData?.[0]?.id);
+
+    // For compatibility with existing code
+    const { error: submissionError } = await supabase
+      .from("contact_submissions")
+      .insert([
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject,
+          message: formData.message
+        }
+      ]);
+
+    if (submissionError) {
+      console.log("Legacy table insert error (non-critical):", submissionError);
+    }
+
+    // Send email to the organization (using a verified Resend domain)
     const emailResponse = await resend.emails.send({
       from: "Housai Old Age Home <onboarding@resend.dev>",
       to: ["info@housaioldagehome.com"],
@@ -53,7 +109,7 @@ const handler = async (req: Request): Promise<Response> => {
           
           <div style="background-color: #e6f3ff; padding: 15px; border-radius: 8px; margin: 20px 0;">
             <p style="margin: 0; font-size: 14px; color: #555;">
-              This message was sent through the contact form on the Housai Old Age Home website.
+              This inquiry has been saved in your database with ID: <strong>${inquiryData?.[0]?.id || "Unknown"}</strong><br/>
               Please respond to the sender at: <a href="mailto:${formData.email}">${formData.email}</a>
             </p>
           </div>
@@ -104,7 +160,8 @@ const handler = async (req: Request): Promise<Response> => {
     return new Response(
       JSON.stringify({ 
         success: true, 
-        message: "Contact form submitted successfully and emails sent" 
+        message: "Contact form submitted successfully",
+        inquiryId: inquiryData?.[0]?.id || null
       }),
       {
         status: 200,
