@@ -122,8 +122,8 @@ const Footer = () => {
               <p className="text-white/60 text-xs mt-1">
                 A nonprofit initiative for elder care
               </p>
-              <p className="text-red-600 text-xs mt-1">
-                Designed and Developed by Jisnu Digital Solutions Pvt Ltd
+              <p className="text-white/60 text-xs mt-1">
+                Designed and Developed by <span className="text-red-600">Jisnu Digital Solutions Pvt Ltd</span>
               </p>
             </div>
           </div>
