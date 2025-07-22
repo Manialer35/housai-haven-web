@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Heart } from 'lucide-react';
-import logo from '@/assets/HousaiLogo.png'; 
+import logo from '@/assets/HLogo.png'; 
 
 
 const Navbar = () => {
